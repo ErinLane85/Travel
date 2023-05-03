@@ -34,10 +34,10 @@
 header {
     height: 7rem;
     padding: 1.25rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: left;
     background: aqua;
-    border: 1px solid #262626;
+    /* border: 1px solid #262626; */
 }
 img.logo {
     width: 8.5rem;
@@ -54,27 +54,33 @@ nav ul {
 }
 nav ul > li {
     display: inline-flex;
+    
 }
 nav > ul > li > a {
     padding: .75rem;
-    background-color: aqua;
+    /* background-color: aqua; */
     border-radius: 8px;
     text-decoration: none;
+    color: black !important;
 }
 nav > ul > li > a:hover {
     background-color: #011627;
-    color: #FDFFFC;
+    color: #FDFFFC !important;
 }
 main {
     position: static;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 footer {
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: 1.25rem;
     font-size: 1.3rem;
     text-align: left;
     background: #00ffff;
-    border: 1px solid #262626;
+    /* border: 1px solid #262626; */
     height: 7rem;
 }
 footer .social {
@@ -171,5 +177,163 @@ footer .social {
 }
 #route {
     text-align: center;
-    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+.modal {
+    --bs-modal-zindex: 1055;
+    --bs-modal-width: 500px;
+    --bs-modal-padding: 1rem;
+    --bs-modal-margin: 0.5rem;
+    --bs-modal-color: ;
+    --bs-modal-bg: #fff;
+    --bs-modal-border-color: var(--bs-border-color-translucent);
+    --bs-modal-border-width: 1px;
+    --bs-modal-border-radius: 0.5rem;
+    --bs-modal-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --bs-modal-inner-border-radius: calc(0.5rem - 1px);
+    --bs-modal-header-padding-x: 1rem;
+    --bs-modal-header-padding-y: 1rem;
+    --bs-modal-header-padding: 1rem 1rem;
+    --bs-modal-header-border-color: var(--bs-border-color);
+    --bs-modal-header-border-width: 1px;
+    --bs-modal-title-line-height: 1.5;
+    --bs-modal-footer-gap: 0.5rem;
+    --bs-modal-footer-bg: ;
+    --bs-modal-footer-border-color: var(--bs-border-color);
+    --bs-modal-footer-border-width: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--bs-modal-zindex);
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+.fade {
+    transition: opacity .15s linear;
+}
+
+.contact, button, input {
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+.background {
+    display: flex;
+    min-height: 100vh;
+}
+  
+.container2 {
+    flex: 0 1 700px;
+    margin: auto;
+    margin-top: 75px;
+    padding: 10px;
+}
+  
+  .screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 3rem;
+  }
+
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 26px;
+  }
+  .app-title span {
+    color: #888;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: aqua;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: rgb(45, 218, 218);
+  }
