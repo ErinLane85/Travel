@@ -175,10 +175,10 @@ footer .social {
     text-align: center;
     padding-bottom: 1rem;
 }
-#route {
-    text-align: center;
+/* #route {
+    align-content: center;
     padding-bottom: 1rem;
-}
+} */
 .modal {
     --bs-modal-zindex: 1055;
     --bs-modal-width: 500px;
