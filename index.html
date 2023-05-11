@@ -10,6 +10,8 @@
     <title>Life on the Road | Home</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,26 +23,70 @@
 
 <body>
 <header>
-   <nav>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: aqua;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" aria-current="page"><img src="img/Logo-1.png" alt="Life on the Road logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About our adventure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="route.html">The route</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        <ul class="navbar-nav sm-icons mr-0">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/erin.lane.5876/" class="float-right remove-overflow social" target="_blank" title="Facebook.com"><i class="fa-brands fa-facebook" class="remove-overflow"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/erinlane85/" class="float-right remove-overflow social" target="_blank" title="Instagram.com"><i class="fa-brands fa-instagram" class="remove-overflow"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.pinterest.com/erinlane85/" class="float-right remove-overflow social" target="_blank" title="Pinterest.com"><i class="fa-brands fa-pinterest" class="remove-overflow"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<div class="clearfix"></div>
+</header>
+    <!-- <a class="navbar-brand active" href="index.html" aria-current="page"><img src="img/Logo-1.png" style="margin-left: .5rem; margin-top: -.5rem; margin-bottom: -.35rem;" alt="Life on the Road logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About our adventure</a>
+            </li>
+            <li class="nav-item" style="padding-left: 1rem;">
+                <a class="nav-link" href="route.html">The route</a>
+            </li>
+            <li class="nav-item" style="padding-left: 1rem;">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+        </ul> -->
+           <!-- <nav class="navbar navbar-expand-lg">
     <a href="index.html" class="float-left remove-overflow">
       <img src="img/Logo-1.png" alt="Life on the Road logo" class="logo remove-overflow"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     <ul class="menu">
         <li><a href="about.html">About our adventure</a></li>
         <li><a href="route.html">The route</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery.html">Gallery</a></li> -->
         <!-- <li><a href="contact.html">Contact me</a></li> -->
       
-        <a href="https://www.facebook.com/erin.lane.5876/" class="float-right remove-overflow" target="_blank" title="Facebook.com"><i class="fa-brands fa-facebook" class="remove-overflow"></i></a>
+        <!-- <a href="https://www.facebook.com/erin.lane.5876/" class="float-right remove-overflow" target="_blank" title="Facebook.com"><i class="fa-brands fa-facebook" class="remove-overflow"></i></a>
         <a href="https://www.instagram.com/erinlane85/" class="float-right remove-overflow" target="_blank" title="Instagram.com"><i class="fa-brands fa-instagram" class="remove-overflow"></i></a>
         <a href="https://www.pinterest.com/erinlane85/" class="float-right remove-overflow" target="_blank" title="Pinterest.com"><i class="fa-brands fa-pinterest" class="remove-overflow"></i></a>
       </ul>
   <div class="clearfix"></div>
-</nav>
-</header>
-
+</nav> -->
 <body>
   <section class="hero">
-    <img class="hero" src="img/IMG_7795.JPG">
+    <img class="hero" src="img/IMG_7795.JPG" alt="Vanna White - 2005 Sprinter Van">
     <div class="hero-content">
        <h1 class="hero-title">
             Life on the Road
@@ -66,15 +112,17 @@
   </div>
 </section>
 </body>  
-<footer>
+<footer class="navbar navbar-expand-lg navbar-light" style="background-color: aqua;">
+    <div class="container-fluid">
   <a href="index.html" class="float-left remove-overflow">
-    <img src="img/Logo-1.png" alt="Life on the Road logo" class="logo remove-overflow">
+    <img src="img/Logo-1.png" alt="Life on the Road logo" class="logo remove-overflow" style="padding-top: .5rem;">
   </a>
-    <a href="https://www.facebook.com/erin.lane.5876/" class="float-right remove-overflow social" target="_blank" title="Facebook.com"><i class="fa-brands fa-facebook" class="remove-overflow"></i></a>
-    <a href="https://www.instagram.com/erinlane85/" class="float-right remove-overflow social" target="_blank" title="Instagram.com"><i class="fa-brands fa-instagram" class="remove-overflow"></i></a>
-    <a href="https://www.pinterest.com/erinlane85/" class="float-right remove-overflow social" target="_blank" title="Pinterest.com"><i class="fa-brands fa-pinterest" class="remove-overflow"></i></a>
+  <ul class="navbar-nav sm-icons mr-0">
+    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/erin.lane.5876/" class="float-right remove-overflow social" target="_blank" title="Facebook.com"><i class="fa-brands fa-facebook" class="remove-overflow"></i></a></li>
+    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/erinlane85/" class="float-right remove-overflow social" target="_blank" title="Instagram.com"><i class="fa-brands fa-instagram" class="remove-overflow"></i></a></li>
+    <li class="nav-item"><a class="nav-link" href="https://www.pinterest.com/erinlane85/" class="float-right remove-overflow social" target="_blank" title="Pinterest.com"><i class="fa-brands fa-pinterest" class="remove-overflow"></i></a></li>
+</ul>
+</div>
 </footer> 
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
