@@ -23,17 +23,9 @@
 }
 @media only screen and (max-width: 960px) {
   .sm-icons .nav-item {
-    padding-right: 1rem;
+    padding-right: .5rem;
   }
 }
-.gallery {
-    display: inline-flexbox;
-}
-/* @media only screen and (max-width: 990px) {
-    .map {
-      padding-left: 0;
-    }
-  } */
 img.logo {
     width: 7.5rem;
     height: 6rem;
@@ -65,10 +57,17 @@ main {
 .hero {
     position: relative;
     width: 100vw;
-    height: 79vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen only and (max-width:960px) {
+    .hero {
+        width:50vw;
+        height:50vh;
+    }
+    
 }
 .hero img {
     filter: brightness(85%);
@@ -204,110 +203,14 @@ main {
     margin-top: 75px;
     padding: 10px;
 }
-  
-  /* .screen {
-    position: relative;
-    background: #3e3e3e;
-    border-radius: 15px;
-  }
-  
-  .screen:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    right: 20px;
-    bottom: 0;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-    z-index: -1;
-  }
-  
-  .screen-header {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background: #4d4d4f;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 3rem;
-  }
-
-  .screen-body {
-    display: flex;
-  }
-  
-  .screen-body-item {
-    flex: 1;
-    padding: 50px;
-  }
-  
-  .screen-body-item.left {
+body {
     display: flex;
     flex-direction: column;
-  }
-  
-  .app-title {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    font-size: 26px;
-  }
-  .app-title span {
-    color: #888;
-  }
-  
-  .app-contact {
+    min-height: 100vh;
+}
+footer {
     margin-top: auto;
-    font-size: 12px;
-    color: #888;
-  }
-  
-  .app-form-group {
-    margin-bottom: 15px;
-  }
-  
-  .app-form-group.message {
-    margin-top: 40px;
-  }
-  
-  .app-form-group.buttons {
-    margin-bottom: 0;
-    text-align: right;
-  }
-  
-  .app-form-control {
-    width: 100%;
-    padding: 10px 0;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #666;
-    color: #ddd;
-    font-size: 14px;
-    text-transform: uppercase;
-    outline: none;
-    transition: border-color .2s;
-  }
-  
-  .app-form-control::placeholder {
-    color: #666;
-  }
-  
-  .app-form-control:focus {
-    border-bottom-color: #ddd;
-  }
-  .app-form-button {
-    background: none;
-    border: none;
-    color: aqua;
-    font-size: 14px;
-    cursor: pointer;
-    outline: none;
-  }
-  .app-form-button:hover {
-    color: rgb(45, 218, 218);
-  } */
+}
 @media only screen {
     and (min-device-width: 320px) 
     and (max-device-width: 480px)
@@ -339,56 +242,3 @@ main {
     and (max-device-width: 1024px) 
     and (-webkit-min-device-pixel-ratio: 1)
 }
-/* .navbar .navbar-nav .nav-link {
-    color: #000000;
-    font-size: 1.32rem;
-} */
-/* .navbar .navbar-nav .nav-link:hover {
-    color: #808080;
-} */
-/* #route {
-    align-content: center;
-    padding-bottom: 1rem;
-} */
-/* footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-} */
-/* footer .social {
-    padding-top: 1.5rem;
-} */
-/* .float-left {
-    float: left;
-} */
-/* @media (max-width: 985px) {
-    .navbar-collapse.collapse {
-         display: none!important; 
-    }
-} */
-/* header {
-    height: 7rem;
-    padding: 1.25rem;
-    font-size: 1.3rem;
-    text-align: left;
-    background: aqua;
-    border: 1px solid #262626;
-} */
-/* nav ul {
-    padding: 1.75rem;
-    margin-left: -1.5rem;
-} */
-/* nav ul > li {
-    display: inline-flex;
-} */
-/* nav > ul > li > a {
-    padding: .75rem;
-    background-color: aqua;
-    border-radius: 8px;
-    text-decoration: none;
-    color: black !important;
-} */
-/* nav > ul > li > a:hover {
-    background-color: #011627;
-    color: #FDFFFC !important;
-} */
